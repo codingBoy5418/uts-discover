@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.uts</groupId>
-    <artifactId>uts-gateway</artifactId>
+    <artifactId>uts-discover</artifactId>
     <version>1.0.0</version>
-    <name>bms-sale</name>
+    <name>uts-discover</name>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -92,7 +92,7 @@
 
     <build>
         <!-- 指定项目的jar包名称 -->
-        <finalName>bms-sale</finalName>
+        <finalName>uts-discover</finalName>
 
         <!-- 自定义打包配置 -->
         <plugins>
