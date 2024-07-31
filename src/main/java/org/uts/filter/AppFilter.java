@@ -1,9 +1,6 @@
 package org.uts.filter;
 
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.*;
@@ -28,6 +25,7 @@ public class AppFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+
         //请求前处理操作
         preHandler(servletRequest, servletResponse);
 
@@ -36,6 +34,7 @@ public class AppFilter implements Filter {
 
         //请求后处理操作
         postHandler(servletRequest, servletResponse);
+
     }
 
     @Override
@@ -52,6 +51,7 @@ public class AppFilter implements Filter {
 
         //打印请求URI
         log.info("request-url: " + httpServletRequest.getRequestURL());
+
         ContextHolder.appContext.set(System.currentTimeMillis());
 
     }

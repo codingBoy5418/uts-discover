@@ -10,7 +10,7 @@
 
 （1）下载并启动nacos
 
-![image-20240710230708112](C:\Users\86180\AppData\Roaming\Typora\typora-user-images\image-20240710230708112.png)
+![image-20240710230708112](images\1.png)
 
 （1）pom文件中引入nacos依赖
 
@@ -49,7 +49,7 @@ spring.cloud.nacos.config.file-extension=yaml
 
 （3）启动SpringBoot项目并访问http://localhost:8848/nacos/index.html，看到服务已经注册到nacos
 
-![image-20240710230619840](C:\Users\86180\AppData\Roaming\Typora\typora-user-images\image-20240710230619840.png)
+![image-20240710230619840](images\2.png)
 
 ### 2.2  uts-discover服务主要功能
 
